@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#gellary img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+#gellary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    flex-direction: row;
+}
+
+@media only screen and (max-width:800px) {
+    #gellary img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    #gellary img {
+        width: 100%;
+    }
+}
